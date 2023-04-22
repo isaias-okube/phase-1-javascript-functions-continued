@@ -11,4 +11,6 @@ function wrapAdjective(string = "*") {
       return `You are ${string}${adjective}${string}!`;
     }
   }
-  
+  const encouragingPromptFunction = wrapAdjective("!!!");
+console.log(encouragingPromptFunction());"You are *special*!!!"
+console.log(encouragingPromptFunction("amazing")); "You are *amazing*!!!"
